@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Word Meaning History",
+  "version": "0.1.0",
+  "description": "Extracts single-word '<word> meaning' searches from browser history (Google, Bing, DuckDuckGo). Local-only processing.",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "permissions": [
+    "history",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_title": "Word Meaning History"
+  },
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "options_ui": {
+    "page": "src/popup.html",
+    "open_in_tab": false
+  },
+  "host_permissions": []
+}

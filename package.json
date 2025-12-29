@@ -1,0 +1,10 @@
+{
+  "name": "word-meaning-history-ext",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs all",
+    "build:chrome": "node scripts/build.mjs chrome",
+    "build:firefox": "node scripts/build.mjs firefox"
+  }
+}
